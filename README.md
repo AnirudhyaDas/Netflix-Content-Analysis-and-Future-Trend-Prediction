@@ -8,3 +8,8 @@ To glean information about content categories, directors, genres, and national c
 Time series forecasting is often used to project future patterns in content. Additionally, possible recommendation systems and trend forecasting make use 
 of machine learning models.
 
+# Key Objectives:
+- Explore and visualize Netflix's content distribution (genres, release years, countries, etc.).
+- Build a content-based recommendation system.
+- Predict future trends in Netflix content using time series analysis.
+- Train machine learning models for content-based predictions.
