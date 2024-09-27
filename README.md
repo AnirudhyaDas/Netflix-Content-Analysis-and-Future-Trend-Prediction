@@ -29,4 +29,18 @@ of machine learning models.
 # Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/netflix-content-analysis.git
+   git clone https://github.com/AnirudhyaDas/Netflix-Content-Analysis-and-Future-Trend-Prediction.git
+
+2. Navigate to the project folder:
+   ```bash
+   cd Netflix-Content-Analysis-and-Future-Trend-Prediction
+   
+3. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   
+4. Launch Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   
+5. Open the Netflix.ipynb notebook to explore the analysis.
