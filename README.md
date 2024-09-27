@@ -50,3 +50,10 @@ of machine learning models.
 - Missing value handling: Handle missing entries in key columns.
 - Feature extraction: Created features such as year_added, month_added, duration_minutes, etc.
 - Content categorization: Breakdown content into genres, countries, and other relevant factors.
+
+### 2. Exploratory Data Analysis (EDA)
+- Visualizations for key metrics like:
+   - Top 10 directors with the most titles.
+   - Distribution of genres and their popularity.
+   - Country-wise content contributions.
+   - Word cloud of movie titles to find frequent keywords.
