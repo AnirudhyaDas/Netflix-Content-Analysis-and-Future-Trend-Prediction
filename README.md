@@ -13,3 +13,15 @@ of machine learning models.
 - Build a content-based recommendation system.
 - Predict future trends in Netflix content using time series analysis.
 - Train machine learning models for content-based predictions.
+
+# Table of Contents
+- Installation
+- Features
+- Exploratory Data Analysis (EDA)
+- Time Series Prediction
+- Machine Learning Models
+- Recommendation System
+- Usage
+- Results
+- Contributing
+- License
