@@ -25,3 +25,8 @@ of machine learning models.
 - Results
 - Contributing
 - License
+
+# Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/netflix-content-analysis.git
