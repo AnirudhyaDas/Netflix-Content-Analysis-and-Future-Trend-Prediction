@@ -46,7 +46,7 @@ of machine learning models.
 5. Open the Netflix.ipynb notebook to explore the analysis.
 
 # Features
-1. Data Cleaning and Feature Engineering
+### 1. Data Cleaning and Feature Engineering
 - Missing value handling: Handle missing entries in key columns.
 - Feature extraction: Created features such as year_added, month_added, duration_minutes, etc.
 - Content categorization: Breakdown content into genres, countries, and other relevant factors.
