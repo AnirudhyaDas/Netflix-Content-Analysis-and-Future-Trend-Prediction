@@ -57,3 +57,8 @@ of machine learning models.
    - Distribution of genres and their popularity.
    - Country-wise content contributions.
    - Word cloud of movie titles to find frequent keywords.
+
+### 3. Time Series Trend Prediction
+- Applied SARIMA (Seasonal ARIMA) model to forecast Netflix content releases for future years.
+- Used Exponential Smoothing to predict trends in content types over time.
+- Evaluated model performance using metrics like Mean Squared Error (MSE).
