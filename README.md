@@ -67,3 +67,7 @@ of machine learning models.
 - Built Logistic Regression, K-Nearest Neighbors (KNN), and Random Forest models to predict content types.
 - Performed hyperparameter tuning using GridSearchCV for optimized results.
 - Evaluated model performance using accuracy, precision, and recall metrics.
+
+### 5. Content-Based Recommendation System
+- Implemented a content-based filtering recommendation system.
+- Suggested similar titles based on user-selected attributes like genre and director.
