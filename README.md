@@ -62,3 +62,8 @@ of machine learning models.
 - Applied SARIMA (Seasonal ARIMA) model to forecast Netflix content releases for future years.
 - Used Exponential Smoothing to predict trends in content types over time.
 - Evaluated model performance using metrics like Mean Squared Error (MSE).
+
+### 4. Machine Learning Models
+- Built Logistic Regression, K-Nearest Neighbors (KNN), and Random Forest models to predict content types.
+- Performed hyperparameter tuning using GridSearchCV for optimized results.
+- Evaluated model performance using accuracy, precision, and recall metrics.
