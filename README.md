@@ -78,6 +78,15 @@ of machine learning models.
 - Content Breakdown by Genre: Pie chart visualizing the distribution of genres in Netflix’s catalog.
 - Content Over Time: A line plot showing the number of content additions over the years.
 
+# Feature Engineering
+### Steps Taken:
+- Date Parsing: Converted date_added to datetime format for time-based analysis.
+- Duration Extraction: For movies, extracted minutes from the duration column.
+- One-Hot Encoding: Created dummy variables for categorical columns such as genres.
+ ```python
+   df['date_added'] = pd.to_datetime(df['date_added'])
+   df['duration_minutes'] = df['duration'].apply(lambda x: extract_minutes(x))
+
 # Time Series Prediction
 ### SARIMA (Seasonal ARIMA):
 We used SARIMA to forecast future content releases on Netflix. This model captures both the seasonal patterns and overall trends in the dataset.
@@ -85,6 +94,4 @@ We used SARIMA to forecast future content releases on Netflix. This model captur
    from statsmodels.tsa.statespace.sarimax import SARIMAX
    sarima_model = SARIMAX(train_data, order=(1, 1, 1), seasonal_order=(1, 1, 1, 12))
    sarima_fit = sarima_model.fit()
-
-
 
