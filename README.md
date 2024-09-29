@@ -71,3 +71,20 @@ of machine learning models.
 ### 5. Content-Based Recommendation System
 - Implemented a content-based filtering recommendation system.
 - Suggested similar titles based on user-selected attributes like genre and director.
+
+# Exploratory Data Analysis (EDA)
+### Visualizations:
+- Top 10 Directors: A bar chart showcasing the directors with the most titles.
+- Content Breakdown by Genre: Pie chart visualizing the distribution of genres in Netflix’s catalog.
+- Content Over Time: A line plot showing the number of content additions over the years.
+
+# Time Series Prediction
+### SARIMA (Seasonal ARIMA):
+We used SARIMA to forecast future content releases on Netflix. This model captures both the seasonal patterns and overall trends in the dataset.
+ ```python
+   from statsmodels.tsa.statespace.sarimax import SARIMAX
+   sarima_model = SARIMAX(train_data, order=(1, 1, 1), seasonal_order=(1, 1, 1, 12))
+   sarima_fit = sarima_model.fit()
+
+
+
