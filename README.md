@@ -18,6 +18,7 @@ of machine learning models.
 - Installation
 - Features
 - Exploratory Data Analysis (EDA)
+- Feature Engineering
 - Time Series Prediction
 - Machine Learning Models
 - Recommendation System
@@ -83,15 +84,45 @@ of machine learning models.
 - Date Parsing: Converted date_added to datetime format for time-based analysis.
 - Duration Extraction: For movies, extracted minutes from the duration column.
 - One-Hot Encoding: Created dummy variables for categorical columns such as genres.
- ```python
-   df['date_added'] = pd.to_datetime(df['date_added'])
-   df['duration_minutes'] = df['duration'].apply(lambda x: extract_minutes(x))
 
 # Time Series Prediction
 ### SARIMA (Seasonal ARIMA):
 We used SARIMA to forecast future content releases on Netflix. This model captures both the seasonal patterns and overall trends in the dataset.
- ```python
-   from statsmodels.tsa.statespace.sarimax import SARIMAX
-   sarima_model = SARIMAX(train_data, order=(1, 1, 1), seasonal_order=(1, 1, 1, 12))
-   sarima_fit = sarima_model.fit()
 
+# Exponential Smoothing:
+An alternative to SARIMA, we applied Exponential Smoothing to smooth the time series data and capture long-term trends.
+
+# Machine Learning Models
+
+## Logistic Regression:
+We used logistic regression to predict the type of Netflix content based on several features.
+
+## K-Nearest Neighbors (KNN):
+KNN was applied for classification tasks to group content based on feature similarity.
+
+## Random Forest:
+Random Forest was used for classification with hyperparameter tuning to optimize performance.
+
+# Recommendation System
+A Content-Based Filtering recommendation system was implemented using cosine similarity to suggest content based on user preferences (e.g., genre, director, etc.).
+
+# Time Series Prediction
+For trend forecasting, we used time series models like SARIMA and Exponential Smoothing to predict future content trends based on historical data.
+## Time Series Models:
+- SARIMA (Seasonal ARIMA): Applied to predict the number of new Netflix content additions.
+- Exponential Smoothing: Used for smoothing and long-term trend detection.
+
+# Usage
+1. Exploratory Data Analysis: Use the Netflix.ipynb notebook to analyze and visualize the Netflix dataset.
+2. Machine Learning Models: Train models to classify or predict Netflix content types.
+3. Recommendation System: Use the content-based recommendation system to suggest similar titles.
+4. Time Series Analysis: Use the time series section to predict future trends in Netflix’s catalog.
+
+# Results
+- Content Distribution: Analyzed the distribution of Netflix content by type, genre, and country.
+- Trend Prediction: Forecasted the growth of Netflix’s catalog using SARIMA and Exponential Smoothing.
+- Content Recommendation: Implemented a recommendation system based on genre similarity.
+- Model Accuracy: Achieved reasonable accuracy in trend prediction and classification models through hyperparameter tuning.
+
+# Contributing
+Contributions are welcome! Please fork this repository and submit a pull request with any improvements or additional features.
